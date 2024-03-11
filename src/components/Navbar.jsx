@@ -12,7 +12,7 @@ const Navbar = () => {
 
   const handleLogout = async () => {
     try {
-      const res = await axios.get("http://localhost:3000/api/logout", {
+      const res = await axios.get("https://culinary-canvas-backend.onrender.com/api/logout", {
         withCredentials: true,
       });
       const data = res.data;
@@ -28,7 +28,7 @@ const Navbar = () => {
 
   const checkUser = async () => {
     try {
-      const res = await axios.get(`http://localhost:3000/api/getUser`, {
+      const res = await axios.get(`https://culinary-canvas-backend.onrender.com/api/getUser`, {
         withCredentials: true,
       });
       const data = await res.data;

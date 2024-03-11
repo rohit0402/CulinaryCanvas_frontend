@@ -15,7 +15,7 @@ const RecipeCard = ({ image, title, id }) => {
 
   const addToFav = async (favourite) => {
     const res = await axios.post(
-      `http://localhost:3000/api/addToFavourites/${user._id}`,
+      `https://culinary-canvas-backend.onrender.com/api/addToFavourites/${user._id}`,
       favourite,
       { withCredentials: true }
     );
@@ -28,7 +28,7 @@ const RecipeCard = ({ image, title, id }) => {
 
   const removeFromFav = async (favourite) => {
     const res = await axios.post(
-      `http://localhost:3000/api/removeFromFavourites/${user._id}`,
+      `https://culinary-canvas-backend.onrender.com/api/removeFromFavourites/${user._id}`,
       favourite,
       { withCredentials: true }
     );

@@ -15,7 +15,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const res = await axios.post(
-      "http://localhost:3000/api/login",
+      "https://culinary-canvas-backend.onrender.com/api/login",
       { email, password },
       { withCredentials: true }
     );
